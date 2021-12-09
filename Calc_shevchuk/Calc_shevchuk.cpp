@@ -1,7 +1,10 @@
-
 #include <iostream>
-
+using namespace std;
+void Plus(int x,int y)
+{
+    cout<<x + y;
+}
 int main()
 {
-    std::cout << "Hello World!\n";
+    Plus(6, 5);
 }
