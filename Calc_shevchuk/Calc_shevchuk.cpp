@@ -1,53 +1,18 @@
 #include <iostream>
 using namespace std;
-void Plus(int x, int y)
-{
-	cout << x + y;
-}
-void Minus(int x, int y)
-{
-	cout << x - y;
-}
-void Umnozhenie(int x, int y)
-{
-	cout << x * y;
-}
-void Delenie(int x, int y)
-{
-	if (y == 0)
-		cout << "Division by zero...";
-	else
-	{
-		cout << x / y;
-	}
-}
-void More(int x, int y)
-{
-	if (x > y)
-		cout << x;
-	else
-		cout << y;
-
-}
-void Less(int x, int y)
-{
-	if (x < y)
-		cout << x;
-	else
-		cout << y;
-
-}
+#include "Calculator.h"
 int main()
 {
-	Plus(6, 5);
+	Calculator calc(4,8);
+	calc.Plus(5, 2);
 	cout << "\n";
-	Minus(12, 6);
+	calc.Minus(10, 2);
 	cout << "\n";
-	Umnozhenie(3, 2);
+	calc.Umnozhenie(2, 3);
 	cout << "\n";
-	Delenie(4, 2);
+	calc.Delenie(4, 0);
 	cout << "\n";
-	More(6, 7);
+	calc.More(5, 9);
 	cout << "\n";
-	Less(9, 15);
+	calc.Less(2, 7);
 }
